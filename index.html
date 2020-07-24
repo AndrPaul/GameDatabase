@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="widli=device-widli, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inter|Rubik+Mono+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+  
+  <title>GameDB</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      
+        <div class="headerTitle">
+          <h1>Upcoming Games</h1>
+        </div>
+        <div class="headerContainer">
+        <div class="gameInputs">
+          <div class="col">
+            <label for="nameInput">Name</label>
+            <input placeholder="Game name" name="nameInput" id="nameInput" type="text" />
+          </div>
+          <div class="col">
+            <label for="genreInput">Genre</label>
+  
+            
+            <select id="genreInput">
+              <option value="RPG">RPG</option>
+              <option value="FPS">FPS</option>
+              <option value="SPORTS">SPORTS</option>
+              <option value="CASUAL">CASUAL</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="releaseInput">Release Date</label>
+            <input type="date" id="releaseInput" name="realeaseInput" />
+          </div>
+        </div>
+        <input type="submit" id="submitBtn" value="Add game" />
+      </div>
+     
+    </div>
+    <main>
+      <div class="mainTitle">
+        <h2>Game list</h2>
+      </div>
+      <div class="mainWrapper">
+        <div class="gameTitles">
+          <ul>
+            <li><strong>Name</strong></li>
+            <li><strong>Genre</strong></li>
+            <li><strong>Release date</strong></li>
+            <li><strong>Days left</strong></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="gameData">
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
